@@ -2,4 +2,9 @@ body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
+  height: 100%;
+  width: 100%;
+  background-image: url('https://cdn.dribbble.com/users/1178585/screenshots/6788672/__1_.png');
+  background-size: cover;
+  background-repeat: no-repeat;
 }
