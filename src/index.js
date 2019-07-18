@@ -40,17 +40,23 @@ export default class Keyframe extends Component {
   }
 
   init() {
-
-    let canvas = document.querySelector('#keyframeCanvas')
-    let ctx = canvas.getContext('2d')
-    let img = new Image()
-    img.src = this.props.source
-    img.onload = () => {
-      ctx.drawImage(img, 0, 0)
+    this.canvas = document.querySelector('#keyframeCanvas')
+    this.ctx = this.canvas.getContext('2d')
+    this.img = new Image()
+    this.img.src = this.props.source
+    this.img.onload = () => {
+      this.ctx.drawImage(this.img, 0, 0)
     }
   }
 
   play(frames) {
+    let i = frames[0]
+    let timer = setInterval(() => {
+      this.ctx.clearRect(0, 0, 250, 250)
+      i++
+      if (i >= frames[1]) clearInterval(timer)
+      this.ctx.drawImage(this.img, 0, i * -250)
+    },this.props.rate)
     console.log(frames)
   }
 }
