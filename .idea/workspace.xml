@@ -2,20 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="89101faf-b8c5-4a23-aed7-03026b1ef939" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/browniu.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/example/node_modules/react-keyframe/.idea/dictionaries/browniu.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/node_modules/react-keyframe/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/example/node_modules/react-keyframe/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/node_modules/react-keyframe/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/example/node_modules/react-keyframe/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/node_modules/react-keyframe/example/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/example/node_modules/react-keyframe/example/public/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/node_modules/react-keyframe/example/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/example/node_modules/react-keyframe/example/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/node_modules/react-keyframe/example/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/example/node_modules/react-keyframe/example/src/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/node_modules/react-keyframe/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/example/node_modules/react-keyframe/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/example/public/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/example/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/example/src/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -32,7 +19,7 @@
         <entry file="file://$PROJECT_DIR$/example/src/App.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="669">
-              <caret line="64" column="88" lean-forward="true" selection-start-line="64" selection-start-column="14" selection-end-line="64" selection-end-column="88" />
+              <caret line="64" column="88" selection-start-line="64" selection-start-column="14" selection-end-line="64" selection-end-column="88" />
               <folding>
                 <element signature="e#0#38#0" expanded="true" />
               </folding>
@@ -71,7 +58,7 @@
         <entry file="file://$PROJECT_DIR$/package.json">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="294">
-              <caret line="14" column="14" lean-forward="true" selection-start-line="14" selection-start-column="14" selection-end-line="14" selection-end-column="14" />
+              <caret line="14" column="14" selection-start-line="14" selection-start-column="14" selection-end-line="14" selection-end-column="14" />
             </state>
           </provider>
         </entry>
@@ -196,12 +183,12 @@
       <option name="presentableId" value="Default" />
       <updated>1563332343460</updated>
       <workItem from="1563332344641" duration="8999000" />
-      <workItem from="1563417517559" duration="13841000" />
+      <workItem from="1563417517559" duration="14108000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="22840000" />
+    <option name="totallyTimeSpent" value="23107000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1184" height="1440" extended-state="6" />
@@ -254,7 +241,7 @@
     <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="294">
-          <caret line="14" column="14" lean-forward="true" selection-start-line="14" selection-start-column="14" selection-end-line="14" selection-end-column="14" />
+          <caret line="14" column="14" selection-start-line="14" selection-start-column="14" selection-end-line="14" selection-end-column="14" />
         </state>
       </provider>
     </entry>
@@ -275,7 +262,7 @@
     <entry file="file://$PROJECT_DIR$/example/src/App.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="669">
-          <caret line="64" column="88" lean-forward="true" selection-start-line="64" selection-start-column="14" selection-end-line="64" selection-end-column="88" />
+          <caret line="64" column="88" selection-start-line="64" selection-start-column="14" selection-end-line="64" selection-end-column="88" />
           <folding>
             <element signature="e#0#38#0" expanded="true" />
           </folding>

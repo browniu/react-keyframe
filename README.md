@@ -55,7 +55,7 @@ const config = {
 }
 ```
 
-`Keyframe` 会注册一个全局方法`window.keyframe.play()` 通过传入`list`中注册的动作名称进行动画播放
+`Keyframe` 组件会注册一个全局方法`window.keyframe.play()` ，通过传入`list`中注册过的动作名称进行指定动画片段的播放
 
 ```javascript
 play(){
