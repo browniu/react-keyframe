@@ -78,7 +78,7 @@ export default class App extends Component {
             <article>
               <p>button Event:</p>
               <Highlight language="javascript">
-                {`<button key={index} onClick={() => {window.keyframe.play(${Object.keys(this.sources[this.state.sourceIndex].list)[0]})}}>${Object.keys(this.sources[this.state.sourceIndex].list)[0]}</button>`}
+                {`<button key={index} onClick={() => {window.keyframe.play('${Object.keys(this.sources[this.state.sourceIndex].list)[0]})'}}>${Object.keys(this.sources[this.state.sourceIndex].list)[0]}</button>`}
               </Highlight>
             </article>
           </div>

@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="89101faf-b8c5-4a23-aed7-03026b1ef939" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/node_modules/react-keyframe/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/example/node_modules/react-keyframe/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/node_modules/react-keyframe/example/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/example/node_modules/react-keyframe/example/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/example/src/App.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -18,8 +21,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/example/src/App.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="510">
-              <caret line="78" column="29" selection-start-line="78" selection-start-column="29" selection-end-line="78" selection-end-column="29" />
+            <state relative-caret-position="552">
+              <caret line="80" column="138" selection-start-line="80" selection-start-column="138" selection-end-line="80" selection-end-column="138" />
               <folding>
                 <element signature="e#0#38#0" expanded="true" />
               </folding>
@@ -150,17 +153,17 @@
       <option name="presentableId" value="Default" />
       <updated>1563332343460</updated>
       <workItem from="1563332344641" duration="8999000" />
-      <workItem from="1563417517559" duration="18074000" />
+      <workItem from="1563417517559" duration="20442000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="27073000" />
+    <option name="totallyTimeSpent" value="29441000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1092" height="1440" extended-state="6" />
+    <frame x="0" y="0" width="1469" height="1440" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.34733894" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2569061" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -273,8 +276,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/example/src/App.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="78" column="29" selection-start-line="78" selection-start-column="29" selection-end-line="78" selection-end-column="29" />
+        <state relative-caret-position="552">
+          <caret line="80" column="138" selection-start-line="80" selection-start-column="138" selection-end-line="80" selection-end-column="138" />
           <folding>
             <element signature="e#0#38#0" expanded="true" />
           </folding>
