@@ -72,7 +72,17 @@ play(){
 
 `list:{action1:[0,10],action2:[11,20,true]`: 指定动作1的帧数是0到第10帧，动作2的帧数是11到20帧且循环播放。
 
+## Demo
 
+查看 [React-keyframe](https://browniu.com/react-keyframe)，了解具体的使用方法
+
+![](static/react-keyframe_demo.png)
+
+## Update
+
+### 0.0.2
+
+* 完成基本功能开发
 
 ## License
 

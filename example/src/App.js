@@ -1,6 +1,7 @@
 import React, {Component} from 'react'
 
 import Keyframe from 'react-keyframe'
+import Highlight from 'react-highlight'
 
 export default class App extends Component {
   constructor(props) {
@@ -64,6 +65,22 @@ export default class App extends Component {
             {Object.keys(this.sources[this.state.sourceIndex].list).map((e, index) => (
               <button key={index} onClick={() => {window.keyframe.play(e)}}>{e}</button>
             ))}
+          </div>
+          <div className="code">
+            <article>
+              <p>config:</p>
+              <Highlight language="javascript">
+                {`
+  const config = ${JSON.stringify(this.sources[this.state.sourceIndex])}
+              `}
+              </Highlight>
+            </article>
+            <article>
+              <p>button Event:</p>
+              <Highlight language="javascript">
+                {`<button key={index} onClick={() => {window.keyframe.play(${Object.keys(this.sources[this.state.sourceIndex].list)[0]})}}>${Object.keys(this.sources[this.state.sourceIndex].list)[0]}</button>`}
+              </Highlight>
+            </article>
           </div>
         </div>
 
