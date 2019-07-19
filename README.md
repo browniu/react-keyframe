@@ -44,8 +44,6 @@ class Example extends Component {
 
 ## Config
 
-`Keyframe` 会注册一个全局方法`window.keyframe.play()` 通过传入`list`中注册的动作名称进行动画播放
-
 ```javascript
 const config = {
   source: 'static/source.png',
@@ -57,6 +55,14 @@ const config = {
 }
 ```
 
+`Keyframe` 会注册一个全局方法`window.keyframe.play()` 通过传入`list`中注册的动作名称进行动画播放
+
+```javascript
+play(){
+  window.keyframe.play('fly')
+}
+```
+
 | Name   | Description                            | Defalut                               | Type   |
 | ------ | -------------------------------------- | ------------------------------------- | ------ |
 | source | PNG 序列的源                           | 'static/source.png'                   | string |
@@ -64,7 +70,7 @@ const config = {
 | list   | 关键帧动画列表                         | {action1:[0,10],action2:[11,20],true} | array  |
 | rate   | 帧率                                   | 50                                    | number |
 
-[^list:{action1:[0,10\],action2:[11,20,true\]}]: 指定动作1的帧数是0到第10帧，动作2的帧数是11到20帧且循环播放。
+`list:{action1:[0,10],action2:[11,20,true]`: 指定动作1的帧数是0到第10帧，动作2的帧数是11到20帧且循环播放。
 
 
 
