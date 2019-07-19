@@ -4,33 +4,36 @@ import PropTypes from 'prop-types'
 import styles from './styles.css'
 
 export default class Keyframe extends Component {
+  constructor(props) {
+    super(props)
+    this.state = {
+      plaing: false,
+      replay: false
+    }
+  }
 
   static propTypes = {
-    source: PropTypes.string,
-    size: PropTypes.array,
-    rate: PropTypes.number,
-    list: PropTypes.object
+    config: PropTypes.object,
+    style: PropTypes.object
   }
 
   static defaultProps = {
-    source: undefined,
-    size: [800, 600],
-    rate: 20,
-    list: [0, 10]
+    config: {
+      source: undefined,
+      size: [800, 600],
+      rate: 20,
+      list: [0, 10]
+    },
+    style: {}
   }
 
   render() {
 
-    const {size, list} = this.props
+    const {config} = this.props
 
     return (
       <div className={styles.keyframe}>
-        <canvas width={size[0]} height={size[1]} className={styles.keyframeCanvas} id={'keyframeCanvas'} />
-        <div className="panel">
-          {Object.keys(list).map((e, index) => (
-            <button key={index} onClick={() => this.play(list[e])}>{e}</button>
-          ))}
-        </div>
+        <canvas style={this.props.style} width={config.size[0]} height={config.size[1]} className={styles.keyframeCanvas} id={'keyframeCanvas'} />
       </div>
     )
   }
@@ -43,20 +46,48 @@ export default class Keyframe extends Component {
     this.canvas = document.querySelector('#keyframeCanvas')
     this.ctx = this.canvas.getContext('2d')
     this.img = new Image()
-    this.img.src = this.props.source
+    this.img.src = this.props.config.source
     this.img.onload = () => {
       this.ctx.drawImage(this.img, 0, 0)
     }
+    window.keyframe = this
   }
 
-  play(frames) {
+  play(e) {
+    if (this.props.config.list[e]) {
+      this.playStep(this.props.config.list[e])
+    } else {
+      console.error('动作未注册')
+    }
+  }
+
+  playStep(frames) {
+    if (frames[2]) {
+      this.setState({replay: true})
+    } else {
+      if (this.state.replay) {
+        setTimeout(() => {
+          this.playStep(frames)
+        }, 300)
+      }
+      this.setState({replay: false})
+    }
+    if (this.state.plaing) return
+    this.setState({plaing: true})
     let i = frames[0]
     let timer = setInterval(() => {
-      this.ctx.clearRect(0, 0, 250, 250)
+      this.ctx.clearRect(0, 0, this.props.config.size[0], this.props.config.size[1])
       i++
-      if (i >= frames[1]) clearInterval(timer)
-      this.ctx.drawImage(this.img, 0, i * -250)
-    },this.props.rate)
-    console.log(frames)
+      if (i >= frames[1]) {
+        if (frames[2] && this.state.replay) {
+          i = frames[0]
+        } else {
+          clearInterval(timer)
+          this.setState({plaing: false})
+        }
+      }
+      this.ctx.drawImage(this.img, 0, i * -this.props.config.size[1])
+    }, this.props.config.rate)
   }
+
 }
