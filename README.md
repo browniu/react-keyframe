@@ -1,6 +1,6 @@
-# react-keyframe
+# react-keyframe([demo](https://browniu.com/react-keyframe))
 
-> plaing Frame Animation in react
+> Play Frame Animation in react
 
 [![NPM](https://img.shields.io/npm/v/react-keyframe.svg)](https://www.npmjs.com/package/react-keyframe) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
