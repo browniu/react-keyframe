@@ -55,20 +55,18 @@ const config = {
 }
 ```
 
-`Keyframe` 组件会注册一个全局方法`window.keyframe.play()` ，使用该方法并传入`list`中注册过的动作名称进行指定动画片段的播放
+`Keyframe` 组件会注册一个全局方法`window.Keyframe.play()` ，使用方法传入`list`中注册过的动作名称就可以播放指定的动画片段
 
 ```javascript
-play(){
-  window.keyframe.play('fly')
-}
+window.keyframe.play('fly')
 ```
 
-| Name   | Description                            | Defalut                               | Type   |
-| ------ | -------------------------------------- | ------------------------------------- | ------ |
-| source | PNG 序列的源                           | 'static/source.png'                   | string |
-| size   | PNG 序列的尺寸 [width,height,isReplay] | [100,100,false]                       | array  |
-| list   | 关键帧动画列表                         | {action1:[0,10],action2:[11,20],true} | array  |
-| rate   | 帧率                                   | 50                                    | number |
+| Name   | Description                         | Defalut                               | Type   |
+| ------ | ----------------------------------- | ------------------------------------- | ------ |
+| source | PNG 序列的源文件                    | 'static/source.png'                   | string |
+| size   | PNG 序列的尺寸 [width,height]       | [100,100,false]                       | array  |
+| list   | 动作列表 [起始帧，结束帧，是否循环] | {action1:[0,10],action2:[11,20],true} | array  |
+| rate   | 帧速率 (ms)                         | 50                                    | number |
 
 `list:{action1:[0,10],action2:[11,20,true]`: 指定动作1的帧数是0到第10帧，动作2的帧数是11到20帧且循环播放。
 
