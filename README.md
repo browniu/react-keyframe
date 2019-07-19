@@ -49,13 +49,13 @@ const config = {
   source: 'static/source.png',
   size: [100, 150],
   list: {
-    fly: [0, 46, true]
+    fly: [0, 10, true]
   },
   rate: 50
 }
 ```
 
-`Keyframe` 组件会注册一个全局方法`window.keyframe.play()` ，通过传入`list`中注册过的动作名称进行指定动画片段的播放
+`Keyframe` 组件会注册一个全局方法`window.keyframe.play()` ，使用该方法并传入`list`中注册过的动作名称进行指定动画片段的播放
 
 ```javascript
 play(){
