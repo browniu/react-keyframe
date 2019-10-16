@@ -5,7 +5,7 @@
 [![NPM](https://img.shields.io/npm/v/react-keyframe.svg)](https://www.npmjs.com/package/react-keyframe) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
 
-## ([demo](https://browniu.github.io/react-keyframe))
+## [demo](https://browniu.github.io/react-keyframe)
 
 ![demo]()
 
